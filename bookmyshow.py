@@ -1,9 +1,13 @@
-import numpy as np
-import pandas as pd
+#import numpy as np
+#import pandas as pd
 class Bookmy_Tickets:
     print('Welcome to StarkCinemas')
 
     def __init__(self):
+        self.display()
+        #self.name = "MY name is vishal gupta"
+
+    def display(self):
         print('******************************************')
         print('PLEASE ENTER YOUR CHOICE : ')
         print('******************************************')
@@ -17,9 +21,10 @@ class Bookmy_Tickets:
             exit()
         if choice == 1:
             print('Called')
-            Bookmy_Tickets.show_screens()
+            self.show_screens()
+            #Bookmy_Tickets.show_screens()
 
-    @classmethod
+    #@classmethod
     def show_screens(self):
 
         print('Type of screen you want enjoy watching movie')
@@ -53,9 +58,11 @@ class Bookmy_Tickets:
 
         buy = input('To Procced with Booking Tickets Press "Yes" or "No" ')
         if buy in ['Yes', 'yes', 'YES']:
-            Bookmy_Tickets.Buy_tickets()
+            self.Buy_tickets()
+            #Bookmy_Tickets.Buy_tickets()
         elif buy in ['No', 'NO', 'no']:
-            Bookmy_Tickets.display()
+            self.display()
+            #Bookmy_Tickets.display()
             # arr = np.array(self.matrix)
             # df = pd.DataFrame(arr)
             # df.iloc[2, 3] = 'b'
@@ -97,21 +104,21 @@ class Bookmy_Tickets:
         # print('To Procced with Booking Tickets Press "Yes" or "No" ')
         buy=input('To Procced with Booking Tickets Press "Yes" or "No" ')
         if buy in ['Yes' , 'yes' , 'YES']:
-            Bookmy_Tickets.Buy_tickets()
+            self.Buy_tickets()
+#            #Bookmy_Tickets.Buy_tickets()
+
         if buy in ['No' , 'NO' , 'no']:
-            Bookmy_Tickets.display()
+            self.Buy_tickets()
+            #Bookmy_Tickets.display()
 
     #@classmethod
     def Buy_tickets(self):
         print("Enter Row and Column Number for your desired Place")
-        arr = np.array(self.matrix)
-        df = pd.DataFrame(arr)
-        df.iloc[2,3] = 'b'
-        print(df)
-
-
-
-
+        #arr = np.array(self.matrix)
+        #df = pd.DataFrame(arr)
+        #df.iloc[2,3] = 'b'
+        #print(df)
+        print("buyticket is called")
 
 
 
